@@ -2,15 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
+    public float money = 1000;
+    public TextMeshProUGUI moneyText;
+
     public static GameController instance;
     public List<ItemInventoryImageMapping> itemsMappingList;
+
+    public Inventory shopInventory, playerInventory;
+
     // Start is called before the first frame update
     void Start()
     {
         GameController.instance = this;
+        UpdateMoney();
+    }
+
+    public void HideInventory()
+    {
+        
+    }
+
+    public void UpdateMoney()
+    {
+        moneyText.text = money.ToString();
     }
 
     public Sprite getSpriteFromItem(Item item)
