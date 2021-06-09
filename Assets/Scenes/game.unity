@@ -941,6 +941,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692721666}
   m_CullTransparentMesh: 0
+--- !u!1 &780664321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1759473418116686, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
+  m_PrefabInstance: {fileID: 827798814}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &780664323
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780664321}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 0a7ca904c318a9b4cb519fdf2c555017, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 4, y: 4}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &792662094
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,6 +1006,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 792662095}
+  - component: {fileID: 792662096}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -973,6 +1030,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &792662096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792662094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d98563c48c2344a9f87714fbed1ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &827798814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -983,6 +1052,22 @@ PrefabInstance:
     - target: {fileID: 1470923069254074, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
       propertyPath: m_Name
       value: 4 Directional Farmer Guy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4098715193858820, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -104.438774
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057570570198, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -65.12494
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855787924512448, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 103.33988
+      objectReference: {fileID: 0}
+    - target: {fileID: 4907253819220406, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 65.37164
       objectReference: {fileID: 0}
     - target: {fileID: 4908163613992888, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
       propertyPath: m_LocalPosition.x
