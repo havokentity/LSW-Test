@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class Hero : Character
 {
-    
+    public override void RunCharacterLogic()
+    {
+        base.RunCharacterLogic();
+    }
 }

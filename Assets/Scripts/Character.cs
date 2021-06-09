@@ -30,7 +30,7 @@ public class Character : MonoBehaviour
         Initialize();
     }
 
-    public void RunCharacterLogic()
+    public virtual void RunCharacterLogic()
     {
         if(goal != null)
         {
