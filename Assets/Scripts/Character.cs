@@ -17,7 +17,7 @@ public class Character : MonoBehaviour
     public float goalTolerance;    
 
 
-    protected void Initialize()
+    protected virtual void Initialize()
     {
         collider2D = GetComponent<CircleCollider2D>();
         rigidBody2D = GetComponent<Rigidbody2D>();
