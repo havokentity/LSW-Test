@@ -41,12 +41,25 @@ public class GameController : MonoBehaviour
         playerInventory.buySellMode = true;
         shopInventory.Show();
         playerInventory.Show();
+        playerInventory.equippedInventory.Hide();
     }
 
     public void ShowInventory()
     {
         playerInventory.buySellMode = false;
         playerInventory.Show();
+        playerInventory.equippedInventory.Show();
+    }
+
+    public bool IsInventoryMode()
+    {
+        if(playerInventory.gameObject.activeSelf && playerInventory.buySellMode == false &&
+            !shopInventory.gameObject.activeSelf)
+        {
+            return true;
+        }
+
+        return false;
     }
 
     public void HideInventory()
@@ -107,7 +120,6 @@ public class GameController : MonoBehaviour
         {
             if (Input.GetKeyUp(KeyCode.I))
             {
-                print("I TOGGL");
                 if (playerInventory.gameObject.activeSelf)
                 {
                     HideInventory();

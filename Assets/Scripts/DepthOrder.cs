@@ -21,10 +21,6 @@ public class DepthOrder : MonoBehaviour
 
         foreach (SpriteRenderer objectRenderer in GetComponentsInChildren<SpriteRenderer>(true))
         {
-            if(gameObject.name.Contains("Hero"))
-            {
-                print(objectRenderer.gameObject.name);
-            }
             spriteRenderers.Add(objectRenderer);
             var metaControl = objectRenderer.GetComponent<DepthOrderMetaControl>();
             if (metaControl != null)
@@ -35,7 +31,6 @@ public class DepthOrder : MonoBehaviour
             {
                 metaControlValues.Add(0);
             }
-            //objectRenderer.dep
         }
     }
 

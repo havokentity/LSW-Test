@@ -130,30 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1841060353}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 531823316}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 531823316}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: shopPrice
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: sellingPrice
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (7)
@@ -294,30 +274,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1841060353}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 531823316}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 531823316}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: shopPrice
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: sellingPrice
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (8)
@@ -611,30 +571,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1841060353}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 531823316}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 531823316}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: shopPrice
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: sellingPrice
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (10)
@@ -737,34 +677,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1919007782}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1877811153}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetCurrentSelectedItem
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 1877811153}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: shopPrice
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: sellingPrice
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (3)
@@ -1006,22 +922,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1841060353}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 531823316}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: parentInventory
-      value: 
-      objectReference: {fileID: 531823316}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: shopPrice
       value: 100
@@ -1030,6 +930,14 @@ PrefabInstance:
       propertyPath: sellingPrice
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: item
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: parentInventory
+      value: 
+      objectReference: {fileID: 531823316}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (5)
@@ -1851,7 +1759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellsParent: {fileID: 1841060352}
   sellMode: {fileID: 349951887}
-  wearing: {fileID: 0}
+  equippedInventory: {fileID: 0}
   buySellMode: 0
   isShop: 1
   currentSelectedItem: {fileID: 0}
@@ -2247,14 +2155,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1841060353}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 531823316}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: shopPrice
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: sellingPrice
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: item
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
@@ -4535,18 +4447,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Directional Farmer Guy
       objectReference: {fileID: 0}
-    - target: {fileID: 1927044935863736, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4300057570570198, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -67.38235
-      objectReference: {fileID: 0}
-    - target: {fileID: 4907253819220406, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 69.173904
-      objectReference: {fileID: 0}
     - target: {fileID: 4908163613992888, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4980,22 +4880,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1841060353}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 531823316}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: parentInventory
-      value: 
-      objectReference: {fileID: 531823316}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: shopPrice
       value: 100
@@ -5004,6 +4888,14 @@ PrefabInstance:
       propertyPath: sellingPrice
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: item
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: parentInventory
+      value: 
+      objectReference: {fileID: 531823316}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (4)
@@ -5188,30 +5080,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1841060353}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 531823316}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 531823316}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: shopPrice
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: sellingPrice
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (9)
@@ -5314,30 +5186,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1841060353}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 531823316}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 531823316}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: shopPrice
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: sellingPrice
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (11)
@@ -5446,7 +5298,7 @@ GameObject:
   - component: {fileID: 1098727207}
   - component: {fileID: 1098727209}
   m_Layer: 5
-  m_Name: wearingCells
+  m_Name: equippedInventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5525,7 +5377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellsParent: {fileID: 639151797}
   sellMode: {fileID: 0}
-  wearing: {fileID: 0}
+  equippedInventory: {fileID: 0}
   buySellMode: 0
   isShop: 0
   currentSelectedItem: {fileID: 0}
@@ -5963,34 +5815,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1919007782}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1877811153}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetCurrentSelectedItem
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 1877811153}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: shopPrice
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: sellingPrice
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (5)
@@ -6460,34 +6288,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1919007782}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1877811153}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetCurrentSelectedItem
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 1877811153}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: shopPrice
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: sellingPrice
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (1)
@@ -7137,14 +6941,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1841060353}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 531823316}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: shopPrice
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: sellingPrice
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: item
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
@@ -7385,14 +7193,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1841060353}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 531823316}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: shopPrice
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: sellingPrice
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: item
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
@@ -7499,34 +7311,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1919007782}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1877811153}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetCurrentSelectedItem
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 1877811153}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: shopPrice
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: sellingPrice
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell
@@ -7688,6 +7476,8 @@ MonoBehaviour:
   goal: {fileID: 1515564828}
   speed: 1
   goalTolerance: 0.1
+  equippedHelmet: 0
+  helmetSpriteRenderer: {fileID: 1815543998}
 --- !u!50 &1780992685
 Rigidbody2D:
   serializedVersion: 4
@@ -7723,24 +7513,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tolerance: 1
   depthCorrection: 5
---- !u!1 &1815543996 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4704592011748106193, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
+--- !u!212 &1815543998 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7570180688486164893, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
   m_PrefabInstance: {fileID: 827798814}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1815543997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815543996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09fc435e6f3afa64eb87374c0c522cdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  metaOffset: 4
 --- !u!1 &1831776735
 GameObject:
   m_ObjectHideFlags: 0
@@ -7928,7 +7705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cellsParent: {fileID: 1919007781}
   sellMode: {fileID: 14781754}
-  wearing: {fileID: 0}
+  equippedInventory: {fileID: 1098727209}
   buySellMode: 0
   isShop: 0
   currentSelectedItem: {fileID: 0}
@@ -8057,34 +7834,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 639151798}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1098727209}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetCurrentSelectedItem
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 1098727209}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: shopPrice
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: sellingPrice
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: 'cell '
@@ -8187,34 +7940,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1919007782}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1877811153}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetCurrentSelectedItem
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 1877811153}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: shopPrice
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: sellingPrice
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (4)
@@ -8526,34 +8255,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1919007782}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1877811153}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetCurrentSelectedItem
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 1877811153}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: shopPrice
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: sellingPrice
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (2)
@@ -8656,30 +8361,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1841060353}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 531823316}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 531823316}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: item
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: shopPrice
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: sellingPrice
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (6)
@@ -8816,14 +8501,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1841060353}
     m_Modifications:
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: m_Group
-      value: 
-      objectReference: {fileID: 1841060355}
-    - target: {fileID: 720153593681685394, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 531823316}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: shopPrice
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: sellingPrice
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: item
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
       value: 

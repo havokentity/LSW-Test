@@ -19,8 +19,13 @@ public class Character : MonoBehaviour
 
     private SimpleTimer blinkTimer;
 
+    public Item equippedHelmet;
+
+    public SpriteRenderer helmetSpriteRenderer;
+
     protected virtual void Initialize()
     {
+        equippedHelmet = Item.NONE;
         animator = GetComponentInChildren<Animator>();
         collider2D = GetComponent<CircleCollider2D>();
         rigidBody2D = GetComponent<Rigidbody2D>();
@@ -28,6 +33,20 @@ public class Character : MonoBehaviour
 
         blinkTimer = new SimpleTimer(1.0f);
         blinkTimer.MarkTimer();
+        UpdateEquipped();
+    }
+
+    public void UpdateEquipped()
+    {
+        switch(equippedHelmet)
+        {
+            case Item.NONE:
+                helmetSpriteRenderer.sprite = null;
+                break;
+            default:
+                helmetSpriteRenderer.sprite = GameController.instance.getSpriteFromItem(equippedHelmet);
+                break;
+        }
     }
 
     // Start is called before the first frame update

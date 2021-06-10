@@ -42,6 +42,34 @@ public class InventoryItem : MonoBehaviour
         UpdateItem();
     }
 
+    public void SwapItem(InventoryItem inventoryItem)
+    {
+        var oldItemEnum = item;
+        var oldShopPrice = shopPrice;
+        var oldSellingPrice = sellingPrice;
+
+        item = inventoryItem.item;
+        shopPrice = inventoryItem.shopPrice;
+        sellingPrice = inventoryItem.sellingPrice;
+        inventoryItem.item = oldItemEnum;
+        inventoryItem.shopPrice = oldShopPrice;
+        inventoryItem.sellingPrice = oldSellingPrice;
+        inventoryItem.UpdateItem();
+
+        UpdateItem();
+    }
+
+    public void ItemToggleSelected()
+    {
+        parentInventory.SetCurrentSelectedItem(this);
+    }
+
+    public void ItemClicked()
+    {
+        print(parentInventory.gameObject.name);
+        parentInventory.HandleCellClick(this);
+    }
+
     public void UpdateItem()
     {
         switch(item)

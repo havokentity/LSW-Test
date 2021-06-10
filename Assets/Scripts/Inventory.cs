@@ -5,7 +5,8 @@ using TMPro;
 
 public class Inventory : MonoBehaviour
 {
-    public GameObject cellsParent, sellMode, wearing;
+    public GameObject cellsParent, sellMode;
+    public Inventory equippedInventory;
     public bool buySellMode, isShop;
 
     public InventoryItem currentSelectedItem;
@@ -68,6 +69,21 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void SwapItemWithEquipped(InventoryItem inventoryItem)
+    {
+        if(equippedInventory)
+        {
+            var tempItem = equippedInventory.GetInventoryItem(0);
+            tempItem.SwapItem(inventoryItem);
+        }
+    }
+
+    public InventoryItem GetInventoryItem(int index)
+    {
+        var items = GetComponentsInChildren<InventoryItem>();
+        return items[index];
+    }
+
     public bool AddItem(InventoryItem inventoryItem)
     {
         foreach(InventoryItem tempInventoryItem in GetComponentsInChildren<InventoryItem>())
@@ -84,19 +100,49 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
+    public void HandleCellClick(InventoryItem item)
+    {
+        if (sellMode == null && !isShop)
+        {
+            var firstEquippedItem = this.GetInventoryItem(0);
+            GameController.instance.playerInventory.AddItem(firstEquippedItem);
+            firstEquippedItem.RemoveItem();
+        } else if(!isShop)
+        {
+            if(GameController.instance.IsInventoryMode())
+            {
+                this.SwapItemWithEquipped(item);                
+            }
+        }
+    }
+
     public void SetCurrentSelectedItem(InventoryItem inventoryItem)
     {
         currentSelectedItem = inventoryItem;
 
-        if (priceText != null)
+        //This means our inventory is the currently equipped inventory
+        if (equippedInventory == null && sellMode == null && !isShop)
         {
-            if (isShop)
+
+        }
+        else
+        {
+            if (GameController.instance.IsInventoryMode())
             {
-                priceText.text = currentSelectedItem.shopPrice.ToString();
-            }
-            else
+                
+            } else
             {
-                priceText.text = currentSelectedItem.sellingPrice.ToString();
+                if (priceText != null)
+                {
+                    if (isShop)
+                    {
+                        priceText.text = currentSelectedItem.shopPrice.ToString();
+                    }
+                    else
+                    {
+                        priceText.text = currentSelectedItem.sellingPrice.ToString();
+                    }
+                }
             }
         }
     }
