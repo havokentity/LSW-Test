@@ -23,7 +23,14 @@ public class GameController : MonoBehaviour
 
     public void HideInventory()
     {
-        
+        shopInventory.gameObject.SetActive(false);
+        playerInventory.gameObject.SetActive(false);
+    }
+
+    public void ShowInventory()
+    {
+        shopInventory.gameObject.SetActive(true);
+        playerInventory.gameObject.SetActive(true);
     }
 
     public void UpdateMoney()
