@@ -13,12 +13,14 @@ public class GameController : MonoBehaviour
     public List<ItemInventoryImageMapping> itemsMappingList;
 
     public Inventory shopInventory, playerInventory;
+    public SystemMessage systemMessage;
 
     // Start is called before the first frame update
     void Start()
     {
         GameController.instance = this;
         UpdateMoney();
+        systemMessage.ShowMessage("Hola... WASD move, I for inventory", 7.0f);
     }
 
     public void HideInventory()
