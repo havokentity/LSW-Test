@@ -66,7 +66,6 @@ public class InventoryItem : MonoBehaviour
 
     public void ItemClicked()
     {
-        print(parentInventory.gameObject.name);
         parentInventory.HandleCellClick(this);
     }
 

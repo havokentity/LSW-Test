@@ -25,7 +25,6 @@ public class Character : MonoBehaviour
 
     protected virtual void Initialize()
     {
-        equippedHelmet = Item.NONE;
         animator = GetComponentInChildren<Animator>();
         collider2D = GetComponent<CircleCollider2D>();
         rigidBody2D = GetComponent<Rigidbody2D>();
