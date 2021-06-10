@@ -3132,7 +3132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d98563c48c2344a9f87714fbed1ebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 1000
+  money: 250
   moneyText: {fileID: 1104909377}
   itemsMappingList:
   - item: 0
