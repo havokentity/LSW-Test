@@ -15,6 +15,9 @@ public class GameController : MonoBehaviour
     public Inventory shopInventory, playerInventory;
     public SystemMessage systemMessage;
 
+    public Transform objectToTrack;
+    public float cameraEasing;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -75,6 +78,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        
+        Vector2 cameraMovement = (objectToTrack.position - Camera.main.transform.position) * cameraEasing;
+        Camera.main.transform.position += (Vector3)cameraMovement;
     }
 }

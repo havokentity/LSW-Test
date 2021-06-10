@@ -4405,6 +4405,8 @@ MonoBehaviour:
   shopInventory: {fileID: 531823316}
   playerInventory: {fileID: 1877811153}
   systemMessage: {fileID: 1230474979}
+  objectToTrack: {fileID: 1780992682}
+  cameraEasing: 0.1
 --- !u!1001 &827798814
 PrefabInstance:
   m_ObjectHideFlags: 0
