@@ -26,7 +26,7 @@ public class Character : MonoBehaviour
         rigidBody2D = GetComponent<Rigidbody2D>();
         print("Character Initialized: " + this.name + " with class: " + GetType().Name);
 
-        blinkTimer = new SimpleTimer(3.0f);
+        blinkTimer = new SimpleTimer(1.0f);
         blinkTimer.MarkTimer();
     }
 
@@ -37,19 +37,21 @@ public class Character : MonoBehaviour
     }
 
     public virtual void RunCharacterLogic()
-    {
-        if (blinkTimer.IsTimerComplete())
+    {       
+        if (animator.GetInteger("blink") == 0)
         {
-            if (animator.GetInteger("blink") == 0)
+            if (blinkTimer.IsTimerComplete())
             {
                 var randomValue = Random.Range(0, 100.0f);
-                animator.SetInteger("blink", randomValue > 80.0f ? 1 : 0);                
+                animator.SetInteger("blink", randomValue > 50.0f ? 1 : 0);
+                blinkTimer.MarkTimer(Random.Range(1.0f, 3.0f));
             }
-
-            blinkTimer.MarkTimer();
         }
-        
 
+        animator.SetFloat("xVelocity", rigidBody2D.velocity.x);
+        animator.SetFloat("yVelocity", rigidBody2D.velocity.y);
+        
+        animator.SetBool("xMagGreater", Mathf.Abs(rigidBody2D.velocity.x) > Mathf.Abs(rigidBody2D.velocity.y));
 
         if (goal != null)
         {

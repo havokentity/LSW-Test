@@ -19,8 +19,12 @@ public class DepthOrder : MonoBehaviour
         metaControlValues = new List<int>();
         oldPosition = new Vector2(99999, 99999);
 
-        foreach (SpriteRenderer objectRenderer in GetComponentsInChildren<SpriteRenderer>())
+        foreach (SpriteRenderer objectRenderer in GetComponentsInChildren<SpriteRenderer>(true))
         {
+            if(gameObject.name.Contains("Hero"))
+            {
+                print(objectRenderer.gameObject.name);
+            }
             spriteRenderers.Add(objectRenderer);
             var metaControl = objectRenderer.GetComponent<DepthOrderMetaControl>();
             if (metaControl != null)

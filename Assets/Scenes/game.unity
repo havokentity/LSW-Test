@@ -604,24 +604,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112854489}
   m_CullTransparentMesh: 0
---- !u!1 &134653469 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4704592011748106193, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
-  m_PrefabInstance: {fileID: 827798814}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &134653472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134653469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09fc435e6f3afa64eb87374c0c522cdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  metaOffset: 1
 --- !u!1001 &189575181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1852,7 +1834,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.00012207031}
+  m_AnchoredPosition: {x: 0, y: 0.00024414062}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &531823316
@@ -4553,6 +4535,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Directional Farmer Guy
       objectReference: {fileID: 0}
+    - target: {fileID: 1927044935863736, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300057570570198, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -67.38235
+      objectReference: {fileID: 0}
+    - target: {fileID: 4907253819220406, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 69.173904
+      objectReference: {fileID: 0}
     - target: {fileID: 4908163613992888, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6623,7 +6617,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00012207031}
+  m_AnchoredPosition: {x: 0, y: -0.00024414062}
   m_SizeDelta: {x: 225.81702, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!1 &1412989454
@@ -7729,6 +7723,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tolerance: 1
   depthCorrection: 5
+--- !u!1 &1815543996 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4704592011748106193, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
+  m_PrefabInstance: {fileID: 827798814}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1815543997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815543996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09fc435e6f3afa64eb87374c0c522cdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  metaOffset: 4
 --- !u!1 &1831776735
 GameObject:
   m_ObjectHideFlags: 0

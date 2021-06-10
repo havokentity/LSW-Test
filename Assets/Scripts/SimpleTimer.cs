@@ -12,8 +12,12 @@ public class SimpleTimer
         interval = _interval;
     }
 
-    public void MarkTimer()
+    public void MarkTimer(float newInterval = 0)
     {
+        if(newInterval > 0)
+        {
+            interval = newInterval;
+        }
         counter = Time.time;
     }
 
