@@ -23,6 +23,9 @@ public class Character : MonoBehaviour
 
     public SpriteRenderer helmetSpriteRenderer;
 
+    private bool waypointMode;
+    private int currentWayPointIndex;
+
     protected virtual void Initialize()
     {
         animator = GetComponentInChildren<Animator>();
@@ -33,6 +36,15 @@ public class Character : MonoBehaviour
         blinkTimer = new SimpleTimer(1.0f);
         blinkTimer.MarkTimer();
         UpdateEquipped();
+
+        if (goal != null)
+        {
+            if (goal.transform.childCount > 1)
+            {
+                waypointMode = true;
+                currentWayPointIndex = 0;
+            }
+        }
     }
 
     public void UpdateEquipped()
@@ -71,13 +83,33 @@ public class Character : MonoBehaviour
         
         animator.SetBool("xMagGreater", Mathf.Abs(rigidBody2D.velocity.x) > Mathf.Abs(rigidBody2D.velocity.y));
 
-        if (goal != null)
+        if (waypointMode)
         {
-            Vector2 towards = goal.transform.position - rigidBody2D.transform.position;
+            var currentWayPoint = goal.transform.GetChild(currentWayPointIndex);
+            Vector2 towards = currentWayPoint.position - rigidBody2D.transform.position;
             if (towards.sqrMagnitude > goalTolerance)
             {
                 Vector2 direction = towards.normalized;
                 rigidBody2D.AddForceAtPosition(direction * speed, Vector2.zero, ForceMode2D.Impulse);
+            } else
+            {
+                currentWayPointIndex++;
+                if(currentWayPointIndex >= goal.transform.childCount)
+                {
+                    currentWayPointIndex = 0;
+                }
+            }
+        }
+        else
+        {
+            if (goal != null)
+            {
+                Vector2 towards = goal.transform.position - rigidBody2D.transform.position;
+                if (towards.sqrMagnitude > goalTolerance)
+                {
+                    Vector2 direction = towards.normalized;
+                    rigidBody2D.AddForceAtPosition(direction * speed, Vector2.zero, ForceMode2D.Impulse);
+                }
             }
         }
     }
