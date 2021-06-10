@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public enum Item
 {
     NONE,
-    HAT_TYPE_1
+    HAT_TYPE_1,
+    HAT_TYPE_2_HELMET,
+    HAT_TYPE_3_BLUE,
 }
 
 [System.Serializable]

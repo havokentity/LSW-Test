@@ -134,6 +134,18 @@ PrefabInstance:
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 531823316}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: item
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: shopPrice
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: sellingPrice
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (7)
@@ -360,6 +372,18 @@ PrefabInstance:
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 531823316}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: item
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: shopPrice
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: sellingPrice
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (8)
@@ -2186,15 +2210,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: shopPrice
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: sellingPrice
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: item
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
@@ -11531,10 +11555,10 @@ MonoBehaviour:
     image: {fileID: 0}
   - item: 1
     image: {fileID: 21300000, guid: e37ba4d1071c15a4d90854c0d01e900a, type: 3}
-  - item: 0
-    image: {fileID: 0}
-  - item: 0
-    image: {fileID: 0}
+  - item: 2
+    image: {fileID: 21300000, guid: 6ae69a67548b4674cb6b0d4467818b37, type: 3}
+  - item: 3
+    image: {fileID: 21300000, guid: feb2c13a340bfaf43b67a451410e6ab9, type: 3}
   - item: 0
     image: {fileID: 0}
   shopInventory: {fileID: 531823316}
@@ -13092,15 +13116,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: shopPrice
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: sellingPrice
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: item
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: parentInventory
@@ -13523,6 +13547,18 @@ PrefabInstance:
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 531823316}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: item
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: shopPrice
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: sellingPrice
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (9)
@@ -23075,6 +23111,18 @@ PrefabInstance:
       propertyPath: parentInventory
       value: 
       objectReference: {fileID: 531823316}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: item
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: shopPrice
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
+      propertyPath: sellingPrice
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
       value: cell (6)
