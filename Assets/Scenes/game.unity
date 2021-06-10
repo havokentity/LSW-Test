@@ -148,11 +148,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: shopPrice
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: sellingPrice
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
@@ -799,11 +799,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: shopPrice
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: sellingPrice
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
@@ -3010,7 +3010,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 531823316}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
-        m_MethodName: Buy
+        m_MethodName: BuyAndSell
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3160,11 +3160,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: shopPrice
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: sellingPrice
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name
@@ -4580,7 +4580,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1412989457}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1877811153}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: BuyAndSell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1412989457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6378,11 +6390,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: shopPrice
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685395, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: sellingPrice
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 720153593681685398, guid: 9ffe90fd518fcca4e833205dafec07e4, type: 3}
       propertyPath: m_Name

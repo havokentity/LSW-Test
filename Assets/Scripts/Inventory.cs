@@ -17,7 +17,7 @@ public class Inventory : MonoBehaviour
         UpdateUI();
     }
 
-    public void Buy()
+    public void BuyAndSell()
     {
         if (currentSelectedItem.item != Item.NONE)
         {
@@ -32,6 +32,14 @@ public class Inventory : MonoBehaviour
                         SetCurrentSelectedItem(currentSelectedItem);
                     }
                 }
+            } else
+            {
+                if (GameController.instance.shopInventory.AddItem(currentSelectedItem))
+                {
+                    GameController.instance.IncurCost(-currentSelectedItem.sellingPrice);
+                    currentSelectedItem.RemoveItem();
+                    SetCurrentSelectedItem(currentSelectedItem);
+                }                
             }
         }
     }
