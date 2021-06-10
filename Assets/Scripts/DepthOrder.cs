@@ -33,7 +33,6 @@ public class DepthOrder : MonoBehaviour
             }
             //objectRenderer.dep
         }
-        print(Screen.height);
     }
 
     // Update is called once per frame

@@ -18,6 +18,12 @@ public class SystemMessage : MonoBehaviour
         rectTransform = GetComponent<RectTransform>();
     }
 
+    public void HideMessage()
+    {
+        var sequence = DOTween.Sequence();
+        sequence.Append(rectTransform.DOAnchorPosY(hiddenPos, 1.0f));
+    }
+
     public void ShowMessage(string text, float duration)
     {
         var sequence = DOTween.Sequence();

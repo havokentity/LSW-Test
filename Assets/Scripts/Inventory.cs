@@ -5,7 +5,7 @@ using TMPro;
 
 public class Inventory : MonoBehaviour
 {
-    public GameObject cellsParent, sellMode;
+    public GameObject cellsParent, sellMode, wearing;
     public bool buySellMode, isShop;
 
     public InventoryItem currentSelectedItem;
@@ -15,6 +15,30 @@ public class Inventory : MonoBehaviour
     void Start()
     {
         UpdateUI();
+    }
+
+    public void Hide()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void Show()
+    {
+        gameObject.SetActive(true);
+        if(!isShop)
+        {
+            if(sellMode !=null)
+            {
+                if(buySellMode)
+                {
+                    sellMode.SetActive(true);
+                } else
+                {
+                    sellMode.SetActive(false);
+                }
+                
+            }
+        }
     }
 
     public void BuyAndSell()
@@ -64,29 +88,37 @@ public class Inventory : MonoBehaviour
     {
         currentSelectedItem = inventoryItem;
 
-        if (isShop)
+        if (priceText != null)
         {
-            priceText.text = currentSelectedItem.shopPrice.ToString();
-        } else
-        {
-            priceText.text = currentSelectedItem.sellingPrice.ToString();
+            if (isShop)
+            {
+                priceText.text = currentSelectedItem.shopPrice.ToString();
+            }
+            else
+            {
+                priceText.text = currentSelectedItem.sellingPrice.ToString();
+            }
         }
     }
 
     public void UpdateUI()
     {
-        if(isShop)
+        if (sellMode != null)
         {
-            sellMode.SetActive(true);
-        } else
-        {
-            if (buySellMode)
+            if (isShop)
             {
                 sellMode.SetActive(true);
             }
             else
             {
-                sellMode.SetActive(false);
+                if (buySellMode)
+                {
+                    sellMode.SetActive(true);
+                }
+                else
+                {
+                    sellMode.SetActive(false);
+                }
             }
         }
     }

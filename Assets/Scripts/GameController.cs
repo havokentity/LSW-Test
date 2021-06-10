@@ -18,9 +18,12 @@ public class GameController : MonoBehaviour
     public Transform objectToTrack;
     public float cameraEasing;
 
+    public bool bShopZone;
+
     // Start is called before the first frame update
     void Start()
     {
+        bShopZone = false;  
         GameController.instance = this;
         UpdateMoney();
         systemMessage.ShowMessage("Hola... WASD to move, I for inventory", 7.0f);
@@ -29,14 +32,26 @@ public class GameController : MonoBehaviour
 
     public void HideShop()
     {
-        shopInventory.gameObject.SetActive(false);
-        playerInventory.gameObject.SetActive(false);
+        shopInventory.Hide();
+        playerInventory.Hide();
     }
 
     public void ShowShop()
     {
-        shopInventory.gameObject.SetActive(true);
-        playerInventory.gameObject.SetActive(true);
+        playerInventory.buySellMode = true;
+        shopInventory.Show();
+        playerInventory.Show();
+    }
+
+    public void ShowInventory()
+    {
+        playerInventory.buySellMode = false;
+        playerInventory.Show();
+    }
+
+    public void HideInventory()
+    {
+        playerInventory.Hide();
     }
 
     public void UpdateMoney()
@@ -76,9 +91,40 @@ public class GameController : MonoBehaviour
         return returnSprite;
     }
 
+    private void Update()
+    {
+        if (bShopZone)
+        {
+            if (!shopInventory.gameObject.activeSelf)
+            {
+                if (Input.GetKey(KeyCode.E))
+                {
+                    ShowShop();
+                }
+            }
+        }
+        else
+        {
+            if (Input.GetKeyUp(KeyCode.I))
+            {
+                print("I TOGGL");
+                if (playerInventory.gameObject.activeSelf)
+                {
+                    HideInventory();
+                }
+                else
+                {
+                    ShowInventory();
+                }
+
+            }
+        }
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
+        
         Vector2 cameraMovement = (objectToTrack.position - Camera.main.transform.position) * cameraEasing;
         Camera.main.transform.position += (Vector3)cameraMovement;
     }

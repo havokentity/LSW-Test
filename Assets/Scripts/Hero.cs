@@ -9,6 +9,23 @@ public class Hero : Character
         base.Initialize();
         goal = null;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Shop"))
+        {
+            GameController.instance.systemMessage.ShowMessage("Press E to shop", 7.0f);
+            GameController.instance.bShopZone = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        GameController.instance.bShopZone = false;
+        GameController.instance.systemMessage.HideMessage();
+        GameController.instance.HideShop();
+    }
+
     public override void RunCharacterLogic()
     {
         Vector2 movement = Vector2.zero;
