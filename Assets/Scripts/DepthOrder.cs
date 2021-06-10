@@ -57,7 +57,7 @@ public class DepthOrder : MonoBehaviour
 
             for(int i = 0; i < spriteRenderers.Count; i++)
             {
-                spriteRenderers[i].sortingOrder = Screen.height - currentPosInt.y + depthCorrection + metaControlValues[i];
+                spriteRenderers[i].sortingOrder = Screen.height - currentPosInt.y + Mathf.CeilToInt((float)depthCorrection * (float)Screen.width/1920.0f) + metaControlValues[i];
             }
         }
     }

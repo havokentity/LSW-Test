@@ -11869,6 +11869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Directional Farmer Guy
       objectReference: {fileID: 0}
+    - target: {fileID: 4306541041686222, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4908163613992888, guid: 43b27c1d67cf3e74093a676e947bceb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15838,7 +15842,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 1000
+  m_SortingOrder: 10000
   m_TargetDisplay: 0
 --- !u!224 &1283194095
 RectTransform:
