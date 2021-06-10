@@ -10,17 +10,30 @@ public class DepthOrder : MonoBehaviour
     Vector2 oldPosition;
 
     private List<SpriteRenderer> spriteRenderers;
+    private List<int> metaControlValues;
 
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderers = new List<SpriteRenderer>();
+        metaControlValues = new List<int>();
         oldPosition = new Vector2(99999, 99999);
 
         foreach (SpriteRenderer objectRenderer in GetComponentsInChildren<SpriteRenderer>())
         {
             spriteRenderers.Add(objectRenderer);
-        }print(Screen.height);
+            var metaControl = objectRenderer.GetComponent<DepthOrderMetaControl>();
+            if (metaControl != null)
+            {
+                metaControlValues.Add(metaControl.metaOffset);
+            }
+            else
+            {
+                metaControlValues.Add(0);
+            }
+            //objectRenderer.dep
+        }
+        print(Screen.height);
     }
 
     // Update is called once per frame
@@ -44,9 +57,9 @@ public class DepthOrder : MonoBehaviour
         {
             oldPosition = currentPosition;
 
-            foreach(SpriteRenderer spriteRenderer in spriteRenderers)
+            for(int i = 0; i < spriteRenderers.Count; i++)
             {
-                spriteRenderer.sortingOrder = Screen.height - currentPosInt.y + depthCorrection;
+                spriteRenderers[i].sortingOrder = Screen.height - currentPosInt.y + depthCorrection + metaControlValues[i];
             }
         }
     }

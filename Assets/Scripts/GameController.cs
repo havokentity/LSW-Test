@@ -23,16 +23,17 @@ public class GameController : MonoBehaviour
     {
         GameController.instance = this;
         UpdateMoney();
-        systemMessage.ShowMessage("Hola... WASD move, I for inventory", 7.0f);
+        systemMessage.ShowMessage("Hola... WASD to move, I for inventory", 7.0f);
+        HideShop();
     }
 
-    public void HideInventory()
+    public void HideShop()
     {
         shopInventory.gameObject.SetActive(false);
         playerInventory.gameObject.SetActive(false);
     }
 
-    public void ShowInventory()
+    public void ShowShop()
     {
         shopInventory.gameObject.SetActive(true);
         playerInventory.gameObject.SetActive(true);

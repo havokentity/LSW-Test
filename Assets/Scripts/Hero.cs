@@ -28,7 +28,13 @@ public class Hero : Character
         {
             movement += Vector2.right;
         }
-        print(movement);
+
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit(0);
+            return;
+        }
+
         rigidBody2D.AddForceAtPosition(movement * speed, Vector2.zero, ForceMode2D.Impulse);
         base.RunCharacterLogic();
     }
