@@ -12,6 +12,8 @@ public class Inventory : MonoBehaviour
     public InventoryItem currentSelectedItem;
     public TextMeshProUGUI priceText;
 
+    public Character boundCharacter;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -75,9 +77,29 @@ public class Inventory : MonoBehaviour
         {
             var tempItem = equippedInventory.GetInventoryItem(0);
             tempItem.SwapItem(inventoryItem);
+            UpdateEquippedWithBoundCharacter();
         }
     }
 
+
+    void UpdateEquippedWithBoundCharacter()
+    {
+        if (boundCharacter)
+        {
+            var firstEquippedItem = this.GetInventoryItem(0);
+            boundCharacter.equippedHelmet = firstEquippedItem.item;
+            boundCharacter.UpdateEquipped();
+        }
+        else
+        {
+            if (equippedInventory)
+            {
+                var firstEquippedItem = equippedInventory.GetInventoryItem(0);
+                equippedInventory.boundCharacter.equippedHelmet = firstEquippedItem.item;
+                equippedInventory.boundCharacter.UpdateEquipped();
+            }
+        }
+    }
     public InventoryItem GetInventoryItem(int index)
     {
         var items = GetComponentsInChildren<InventoryItem>();
@@ -106,7 +128,7 @@ public class Inventory : MonoBehaviour
         {
             var firstEquippedItem = this.GetInventoryItem(0);
             GameController.instance.playerInventory.AddItem(firstEquippedItem);
-            firstEquippedItem.RemoveItem();
+            firstEquippedItem.RemoveItem();            
         } else if(!isShop)
         {
             if(GameController.instance.IsInventoryMode())
@@ -114,6 +136,8 @@ public class Inventory : MonoBehaviour
                 this.SwapItemWithEquipped(item);                
             }
         }
+
+        UpdateEquippedWithBoundCharacter();
     }
 
     public void SetCurrentSelectedItem(InventoryItem inventoryItem)

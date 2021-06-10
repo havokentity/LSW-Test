@@ -3919,6 +3919,7 @@ MonoBehaviour:
   isShop: 1
   currentSelectedItem: {fileID: 0}
   priceText: {fileID: 384951842}
+  boundCharacter: {fileID: 0}
 --- !u!1 &531865629
 GameObject:
   m_ObjectHideFlags: 0
@@ -13917,6 +13918,7 @@ MonoBehaviour:
   isShop: 0
   currentSelectedItem: {fileID: 0}
   priceText: {fileID: 0}
+  boundCharacter: {fileID: 1780992684}
 --- !u!1 &1104847199
 GameObject:
   m_ObjectHideFlags: 0
@@ -20961,6 +20963,7 @@ MonoBehaviour:
   isShop: 0
   currentSelectedItem: {fileID: 0}
   priceText: {fileID: 1149640955}
+  boundCharacter: {fileID: 0}
 --- !u!1 &1899826466
 GameObject:
   m_ObjectHideFlags: 0
