@@ -6,7 +6,7 @@ using TMPro;
 
 public class GameController : MonoBehaviour
 {
-    public float money = 1000;
+    public float money = 100;
     public TextMeshProUGUI moneyText;
 
     public static GameController instance;
@@ -38,6 +38,23 @@ public class GameController : MonoBehaviour
     public void UpdateMoney()
     {
         moneyText.text = money.ToString();
+    }
+
+    public bool CheckCost(int cost)
+    {
+        if (money < cost)
+        {
+            systemMessage.ShowMessage("Not enough money bruh", 7.0f);
+            return false;
+        }
+
+        return true;
+    }
+
+    public void IncurCost(int cost)
+    {
+        money -= cost;
+        UpdateMoney();
     }
 
     public Sprite getSpriteFromItem(Item item)

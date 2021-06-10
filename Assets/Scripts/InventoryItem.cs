@@ -22,9 +22,25 @@ public class InventoryItem : MonoBehaviour
 
     
     public Item item;
-    public float shopPrice, sellingPrice;
+    public int shopPrice, sellingPrice;
 
     public Image cellItemImage;
+
+    public void RemoveItem()
+    {
+        item = Item.NONE;
+        shopPrice = 0;
+        sellingPrice = 0;
+        UpdateItem();
+    }
+
+    public void CloneItem(InventoryItem inventoryItem)
+    {
+        item = inventoryItem.item;
+        shopPrice = inventoryItem.shopPrice;
+        sellingPrice = inventoryItem.sellingPrice;
+        UpdateItem();
+    }
 
     public void UpdateItem()
     {
