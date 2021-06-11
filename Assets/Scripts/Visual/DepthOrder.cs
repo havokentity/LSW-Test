@@ -40,12 +40,12 @@ public class DepthOrder : MonoBehaviour
         Vector2 currentPosition = Camera.main.WorldToScreenPoint(transform.position);
         Vector2Int currentPosInt = Vector2Int.CeilToInt(currentPosition);
 
-        if(currentPosInt.x < -100 || currentPosInt.x > (Screen.width + 100))
+        if(currentPosInt.x < -200 || currentPosInt.x > (Screen.width + 200))
         {
             return;
         }
 
-        if (currentPosInt.y < -100 || currentPosInt.y > (Screen.height + 100))
+        if (currentPosInt.y < -200 || currentPosInt.y > (Screen.height + 200))
         {
             return;
         }
@@ -57,7 +57,7 @@ public class DepthOrder : MonoBehaviour
 
             for(int i = 0; i < spriteRenderers.Count; i++)
             {
-                spriteRenderers[i].sortingOrder = Screen.height - currentPosInt.y + Mathf.CeilToInt((float)depthCorrection * (float)Screen.width/1920.0f) + metaControlValues[i];
+                spriteRenderers[i].sortingOrder = Mathf.Max(Screen.height - currentPosInt.y + Mathf.CeilToInt((float)depthCorrection * (float)Screen.width/1920.0f) + metaControlValues[i], 1);
             }
         }
     }
