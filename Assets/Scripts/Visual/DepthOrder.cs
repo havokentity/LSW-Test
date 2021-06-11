@@ -40,12 +40,12 @@ public class DepthOrder : MonoBehaviour
         Vector2 currentPosition = Camera.main.WorldToScreenPoint(transform.position);
         Vector2Int currentPosInt = Vector2Int.CeilToInt(currentPosition);
 
-        if(currentPosInt.x < 0 || currentPosInt.x > Screen.width)
+        if(currentPosInt.x < -100 || currentPosInt.x > (Screen.width + 100))
         {
             return;
         }
 
-        if (currentPosInt.y < 0 || currentPosInt.y > Screen.height)
+        if (currentPosInt.y < -100 || currentPosInt.y > (Screen.height + 100))
         {
             return;
         }
