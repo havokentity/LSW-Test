@@ -46,27 +46,31 @@ public class Inventory : MonoBehaviour
 
     public void BuyAndSell()
     {
-        if (currentSelectedItem.item != Item.NONE)
+        if (currentSelectedItem != null)
         {
-            if (isShop)
+            if (currentSelectedItem.item != Item.NONE)
             {
-                if (GameController.instance.CheckCost(currentSelectedItem.shopPrice))
+                if (isShop)
                 {
-                    if (GameController.instance.playerInventory.AddItem(currentSelectedItem))
+                    if (GameController.instance.CheckCost(currentSelectedItem.shopPrice))
                     {
-                        GameController.instance.IncurCost(currentSelectedItem.shopPrice);
+                        if (GameController.instance.playerInventory.AddItem(currentSelectedItem))
+                        {
+                            GameController.instance.IncurCost(currentSelectedItem.shopPrice);
+                            currentSelectedItem.RemoveItem();
+                            SetCurrentSelectedItem(currentSelectedItem);
+                        }
+                    }
+                }
+                else
+                {
+                    if (GameController.instance.shopInventory.AddItem(currentSelectedItem))
+                    {
+                        GameController.instance.IncurCost(-currentSelectedItem.sellingPrice);
                         currentSelectedItem.RemoveItem();
                         SetCurrentSelectedItem(currentSelectedItem);
                     }
                 }
-            } else
-            {
-                if (GameController.instance.shopInventory.AddItem(currentSelectedItem))
-                {
-                    GameController.instance.IncurCost(-currentSelectedItem.sellingPrice);
-                    currentSelectedItem.RemoveItem();
-                    SetCurrentSelectedItem(currentSelectedItem);
-                }                
             }
         }
     }
