@@ -84,6 +84,7 @@ public class GameController : MonoBehaviour
         if (money < cost)
         {
             systemMessage.ShowMessage("Not enough money bruh", 7.0f);
+            SoundController.instance.dangerSound.Play();
             return false;
         }
 
