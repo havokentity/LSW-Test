@@ -30,6 +30,7 @@ public class BasicDialogueSystem : MonoBehaviour
     {
         if (currentJokeIndex >= jokes.Count)
         {
+            SoundController.instance.dangerSound.Play();
             messageText.text = "Sorry I got no more jokes :(";
         }
         else

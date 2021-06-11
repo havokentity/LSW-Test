@@ -59,6 +59,7 @@ public class Inventory : MonoBehaviour
                             GameController.instance.IncurCost(currentSelectedItem.shopPrice);
                             currentSelectedItem.RemoveItem();
                             SetCurrentSelectedItem(currentSelectedItem);
+                            SoundController.instance.cashRegisterSound.Play();
                         }
                     }
                 }

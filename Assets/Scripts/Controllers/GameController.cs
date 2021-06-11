@@ -32,12 +32,17 @@ public class GameController : MonoBehaviour
 
     public void HideShop()
     {
+        if (shopInventory.gameObject.activeSelf)
+        {
+            SoundController.instance.tweepSound.Play();
+        }
         shopInventory.Hide();
         playerInventory.Hide();
     }
 
     public void ShowShop()
-    {
+    {        
+        SoundController.instance.pleepSound.Play();
         playerInventory.buySellMode = true;
         shopInventory.Show();
         playerInventory.Show();
@@ -46,6 +51,7 @@ public class GameController : MonoBehaviour
 
     public void ShowInventory()
     {
+        SoundController.instance.pleepSound.Play();
         playerInventory.buySellMode = false;
         playerInventory.Show();
         playerInventory.equippedInventory.Show();
@@ -64,6 +70,7 @@ public class GameController : MonoBehaviour
 
     public void HideInventory()
     {
+        SoundController.instance.tweepSound.Play();
         playerInventory.Hide();
     }
 
