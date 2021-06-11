@@ -14,7 +14,7 @@ public class Hero : Character
     {
         if(collision.CompareTag("Shop"))
         {
-            GameController.instance.systemMessage.ShowMessage("Press E to shop", 7.0f);
+            GameController.instance.systemMessage.ShowMessage("Press E to talk to shop keep", 7.0f);
             GameController.instance.bShopZone = true;
         }
     }
