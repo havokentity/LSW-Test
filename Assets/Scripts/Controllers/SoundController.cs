@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundController : MonoBehaviour
 {
-    public AudioSource cashRegisterSound, tweepSound, dangerSound, pleepSound, collectSound;
+    public AudioSource cashRegisterSound, tweepSound, dangerSound, pleepSound, collectSound, thud;
 
     public static SoundController instance;
     // Start is called before the first frame update

@@ -123,11 +123,12 @@ public class GameController : MonoBehaviour
                     ShowShop();
                 }
             }
-
             if (Input.GetKeyUp(KeyCode.I))
             {
                 systemMessage.ShowMessage("Leave shop zone to open inventory!", 7.0f);
+                SoundController.instance.thud.Play();
             }
+        }
         else
         {
             if (Input.GetKeyUp(KeyCode.I))
